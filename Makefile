@@ -4,3 +4,6 @@ create-venv:
     && python -m pip install ipykernel \
     && python -m ipykernel install --user --name=venv \
     && pip install -r requirements.txt
+
+load-venv:
+    source venv/bin/activate
