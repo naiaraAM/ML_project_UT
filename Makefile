@@ -6,12 +6,12 @@ create-venv:
     && pip install -r requirements.txt
 
 
-setup-kaggle: load
+setup-kaggle:
 	pip install -q kaggle \
 	&& mkdir ~/.kaggle/ \
 	&& mv kaggle.json ~/.kaggle/kaggle.json \
 	&& chmod 600 ~/.kaggle/kaggle.json \
-	&& kaggle competitions download -c 'playground-series-s4e6'kaggle competitions download -c 'playground-series-s4e6'
+	&& kaggle competitions download -c 'playground-series-s4e6'
 
 load:
 	. venv/bin/activate
