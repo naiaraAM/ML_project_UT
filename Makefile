@@ -13,5 +13,8 @@ setup-kaggle:
 	&& chmod 600 ~/.kaggle/kaggle.json \
 	&& kaggle competitions download -c 'playground-series-s4e6'
 
+submit:
+	kaggle competitions submit -c playground-series-s4e6 -f submission.csv -m "Random forest"
+
 load:
 	. venv/bin/activate
