@@ -14,7 +14,7 @@ setup-kaggle:
 	&& kaggle competitions download -c 'playground-series-s4e6'
 
 submit:
-	kaggle competitions submit -c playground-series-s4e6 -f submission.csv -m "Random forest"
+	kaggle competitions submit -c playground-series-s4e6 -f submission.csv -m "Fidan"
 
 load:
 	. venv/bin/activate
